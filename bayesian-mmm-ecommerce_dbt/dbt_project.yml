@@ -1,0 +1,14 @@
+name: 'bayesian_mmm_ecommerce_dbt'
+version: '1.0.0'
+config-version: 2
+profile: 'bayesian_mmm_ecommerce_dbt'
+model-paths: ["models"]
+clean-targets: ["target", "dbt_packages"]
+models:
+  bayesian_mmm_ecommerce_dbt:
+    staging:
+      +materialized: table
+    marts:
+      +materialized: table
+    features:
+      +materialized: table
