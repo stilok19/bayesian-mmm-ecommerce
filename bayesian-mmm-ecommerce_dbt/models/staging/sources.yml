@@ -1,0 +1,6 @@
+version: 2
+sources:
+  - name: conjura
+    schema: conjura_mmm_data
+    tables:
+      - name: raw_conjura
